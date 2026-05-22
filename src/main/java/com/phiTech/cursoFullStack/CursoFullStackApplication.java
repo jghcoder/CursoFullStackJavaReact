@@ -1,6 +1,7 @@
 package com.phiTech.cursoFullStack;
 
 import com.phiTech.cursoFullStack.domain.Car;
+import com.phiTech.cursoFullStack.domain.CarBuilder;
 import com.phiTech.cursoFullStack.domain.CarRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

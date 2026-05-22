@@ -1,13 +1,13 @@
 package com.phiTech.cursoFullStack.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Car {
 
+    @ManyToOne
+    @JoinColumn(name = "ownerid")     // nombre de la columna en la tabla car
+    private Owner owner;
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
@@ -91,4 +91,5 @@ public class Car {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }
